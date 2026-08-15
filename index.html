@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minuto de Sabedoria</title>
 
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f0e6;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    width: 85%;
+    max-width: 500px;
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #555;
+    font-size: 28px;
+}
+
+.mensagem {
+    font-size: 23px;
+    line-height: 1.5;
+    color: #333;
+    margin: 30px 0;
+}
+
+button {
+    background: #6d8b74;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🌿 Minuto de Sabedoria</h1>
+
+<div class="mensagem" id="mensagem"></div>
+
+<button onclick="novaMensagem()">✨ Nova mensagem</button>
+
+</div>
+
+<script>
+
+const mensagens = [
+
+"Tenha paciência: nem tudo precisa acontecer hoje.",
+
+"Faça o bem, mesmo quando ninguém estiver olhando.",
+
+"Valorize o que você tem enquanto constrói o que deseja.",
+
+"Um coração tranquilo enxerga soluções onde há problemas.",
+
+"Não compare seu caminho com o de outra pessoa.",
+
+"Perdoar traz liberdade para quem perdoa.",
+
+"Pequenas atitudes podem transformar um grande dia.",
+
+"Escute mais; muitas respostas chegam quando fazemos silêncio.",
+
+"Seja gentil. Você nunca sabe a batalha de alguém.",
+
+"Hoje é uma nova oportunidade para recomeçar.",
+
+"Não deixe um momento difícil definir sua vida.",
+
+"A gratidão muda a maneira como enxergamos o dia.",
+
+"Faça o possível hoje; amanhã você continua.",
+
+"Palavras gentis podem permanecer na memória por anos.",
+
+"Tenha coragem para mudar aquilo que pode mudar.",
+
+"Cuide da sua paz como algo precioso.",
+
+"Nem toda porta fechada é uma perda.",
+
+"Aprenda com o passado, mas não more nele.",
+
+"Quando puder ajudar, ajude sem esperar recompensa.",
+
+"Valorize as pessoas que tornam seus dias melhores.",
+
+"A pressa nem sempre leva ao melhor caminho.",
+
+"Um dia simples também pode ser um dia feliz.",
+
+"Confie no processo e continue caminhando.",
+
+"Ser forte também é saber pedir ajuda.",
+
+"Não permita que pequenas preocupações roubem grandes momentos.",
+
+"A humildade abre caminhos que o orgulho fecha.",
+
+"Escolha suas batalhas e preserve sua serenidade.",
+
+"Às vezes, esperar é parte da resposta.",
+
+"Faça hoje algo pelo qual seu futuro agradecerá.",
+
+"Quem semeia bondade deixa marcas bonitas pelo caminho.",
+
+"A verdadeira riqueza também está nas boas relações.",
+
+"Respire fundo antes de responder quando estiver irritado.",
+
+"Não precisa ser perfeito para fazer algo bom.",
+
+"Tenha fé nos recomeços.",
+
+"Uma boa consciência vale mais que muitos aplausos.",
+
+"Aprender todos os dias é uma forma de crescer.",
+
+"Não carregue culpas que não pertencem a você.",
+
+"Seja firme nos princípios e leve nas palavras.",
+
+"Tempo bem vivido vale mais que tempo apenas ocupado.",
+
+"A felicidade também mora nas coisas simples.",
+
+"Faça o que estiver ao seu alcance com dedicação.",
+
+"Quem sabe agradecer encontra motivos para continuar.",
+
+"Não desista apenas porque o resultado ainda não apareceu.",
+
+"Cuide das suas palavras: elas não podem ser recolhidas.",
+
+"Um gesto de carinho pode mudar o dia de alguém.",
+
+"Tenha serenidade para aceitar o que não pode controlar.",
+
+"Escolha a paz sempre que ela estiver ao seu alcance.",
+
+"Hoje pode ser exatamente o começo que você precisava.",
+
+"Que sua presença deixe o mundo um pouco melhor.",
+
+"Viva o presente: é nele que a vida acontece."
+
+];
+
+function novaMensagem() {
+
+    const numero = Math.floor(Math.random() * mensagens.length);
+
+    document.getElementById("mensagem").innerText = mensagens[numero];
+
+}
+
+novaMensagem();
+
+</script>
+
+</body>
+</html>
